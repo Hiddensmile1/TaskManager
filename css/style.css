@@ -1,8 +1,9 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
-.parentContainer{
+
+.parentContainer {
     height: 100vh;
     background-image: url(../image/background.png);
     background-color: rgb(223, 140, 140);
@@ -11,23 +12,21 @@ body{
     justify-content: center;
 }
 
-.textBox{
+.textBox {
     max-width: 400px;
-   color: white;
+    color: white;
 
-   h1{
-    font-size: 40px;
-    /* line-height: 1; */
-   }
-   p{
-    font-size: 16px;
-   }
+    h1 {
+        font-size: 40px;
+        /* line-height: 1; */
+    }
+
+    p {
+        font-size: 16px;
+    }
 }
 
-.formBox{
-
-}
-.free{
+.free {
     background-color: blue;
     color: white;
     border-radius: 3px;
@@ -36,18 +35,19 @@ body{
     padding: 12px;
 }
 
-form{
+form {
     background-color: white;
     padding: 30px;
     border-radius: 4px;
 
-    input{
+    input {
         height: 35px;
         width: 300px;
         margin-top: 10px;
         border-radius: 10px;
     }
-    button{
+
+    button {
         height: 35px;
         width: 300px;
         margin-top: 10px;
@@ -58,22 +58,53 @@ form{
         text-transform: uppercase;
     }
 }
-.modal{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0);
-    display: none;
-    justify-content: center;
-    top: 0;
-    left: 0;
+
+
+
+@media (max-width: 800px) {
+    .textBox {
+        margin-right: 0px;
+        text-align: center;
+    }
 }
 
-.modal-content{
-    background-color: aliceblue;
+.modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
     padding: 20px;
+    border-radius: 8px;
     text-align: center;
-    height: 50px;
-    width: 300px;
-    border-radius: 10px;
+
+    img {
+        width: 50px
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #007bff;
+        color: #fff;
+        font-weight: bold;
+        font-family: poppins;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: all 350ms;
+    }
+
+    button:hover {
+        transform: translate(1.11);
+        background-color: red;
+    }
+
 }
